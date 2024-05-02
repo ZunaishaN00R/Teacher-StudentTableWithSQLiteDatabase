@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/img"
-    tools:context=".SignupActivity">
+    tools:context=".StudentActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SignUp Here"
+            android:text="Student Record"
             android:textSize="34sp"
             android:layout_gravity="center"
             android:padding="16dp"
@@ -27,61 +26,75 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="58dp"
+            android:orientation="vertical"
             android:gravity="center"
             android:padding="20dp">
+
             <EditText
+                android:id="@+id/editTextStudentName"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_email"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="30dp"
-                android:padding="8dp"
-                android:hint="Email"
-                android:drawableLeft="@drawable/baseline_email_24"
-                android:drawablePadding="8dp"/>
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:padding="8dp" />
+
             <EditText
+                android:id="@+id/editTextStudentClass"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_password"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
-                android:padding="8dp"
-                android:hint="Password"
-                android:inputType="textPassword"
+                android:background="@drawable/lavender_border"
                 android:drawableLeft="@drawable/baseline_lock_24"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:hint="Class"
+                android:padding="8dp" />
+
             <EditText
+                android:id="@+id/editTextStudentCourse"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_confirm"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
-                android:padding="8dp"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:drawableLeft="@drawable/baseline_password_24"
-                android:drawablePadding="8dp"/>
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_menu_book_24"
+                android:drawablePadding="8dp"
+                android:hint="Course"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editTextStudentPassword"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:padding="8dp" />
+
             <Button
+                android:id="@+id/buttonInsertStudent"
                 android:layout_width="300dp"
                 android:layout_height="70dp"
-                android:text="Sign Up"
-                android:id="@+id/signup_button"
-                android:textSize="18sp"
                 android:layout_marginTop="30dp"
-                app:cornerRadius = "30dp"/>
+                android:text="Insert"
+                android:textSize="18sp"
+                app:cornerRadius="30dp" />
+
             <TextView
+                android:id="@+id/ViewStudent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/loginRedirectText"
-                android:text="Already an user? Login"
                 android:layout_gravity="center"
-                android:padding="8dp"
-                android:textSize="18sp"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/teal_700"/>
+                android:padding="8dp"
+                android:text="View Record"
+                android:textColor="@color/teal_700"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

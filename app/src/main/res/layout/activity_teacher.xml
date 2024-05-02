@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/img"
-    tools:context=".SignupActivity">
+    tools:context=".TeacherActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SignUp Here"
+            android:text="Teacher Record"
             android:textSize="34sp"
             android:layout_gravity="center"
             android:padding="16dp"
@@ -34,49 +33,56 @@
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_email"
+                android:id="@+id/editTextTeacherName"
                 android:background="@drawable/lavender_border"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:padding="8dp"
-                android:hint="Email"
-                android:drawableLeft="@drawable/baseline_email_24"
+                android:hint="Name"
+                android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"/>
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:id="@+id/signup_password"
+                android:id="@+id/editTextTeacherDesignation"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Designation"
+                android:drawableLeft="@drawable/baseline_class_24"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:id="@+id/editTextTeacherCourse"
+                android:background="@drawable/lavender_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Course"
+                android:drawableLeft="@drawable/baseline_menu_book_24"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:id="@+id/editTextTeacherPassword"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Password"
-                android:inputType="textPassword"
                 android:drawableLeft="@drawable/baseline_lock_24"
-                android:drawablePadding="8dp"/>
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:id="@+id/signup_confirm"
-                android:background="@drawable/lavender_border"
-                android:layout_marginTop="20dp"
-                android:padding="8dp"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:drawableLeft="@drawable/baseline_password_24"
                 android:drawablePadding="8dp"/>
             <Button
                 android:layout_width="300dp"
                 android:layout_height="70dp"
-                android:text="Sign Up"
-                android:id="@+id/signup_button"
+                android:text="Insert"
+                android:id="@+id/buttonInsertTeacher"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
                 app:cornerRadius = "30dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/loginRedirectText"
-                android:text="Already an user? Login"
-                android:layout_gravity="center"
+                android:id="@+id/ViewTeacher"
+                android:text="View Record"
                 android:padding="8dp"
                 android:textSize="18sp"
                 android:layout_marginTop="8dp"
@@ -84,4 +90,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
